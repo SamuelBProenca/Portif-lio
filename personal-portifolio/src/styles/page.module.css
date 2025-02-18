@@ -1,3 +1,29 @@
+.BannerContainer {
+  text-align: center;
+  width: 100svw;
+  height: 50svh;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url('/lofi-thumb.jpg');
+}
+
+.leftSide{
+  background-color: var(--button-secondary-hover);
+  width: 30%;
+  height: 100%;
+  opacity: 0.7;
+  color: white;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
 .page {
   --gray-rgb: 0, 0, 0;
   --gray-alpha-200: rgba(var(--gray-rgb), 0.08);
@@ -7,11 +33,11 @@
   --button-secondary-hover: #f2f2f2;
 
   display: grid;
-  grid-template-rows: 20px 1fr 20px;
+  /* grid-template-rows: 20px 1fr 20px; */
   align-items: center;
   justify-items: center;
   min-height: 100svh;
-  padding: 80px;
+  /* padding: 80px; */
   gap: 64px;
   font-family: var(--font-geist-sans);
 }
@@ -165,4 +191,44 @@ a.secondary {
   .logo {
     filter: invert();
   }
+}
+/* aqui se inicia a criação do CSS Personalizado */
+
+/* .banner{
+  width: 100svw;
+  height: 50svh;
+  background-color: rgb(32, 7, 7);
+}
+.imageBanner{
+  object-fit: cover;
+} */
+
+.sideNavbar {
+  width: 125px;
+  padding: 10px;
+  position: absolute;
+  margin-right: -92%;
+}
+
+.sideNavbar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sideNavbar li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.sideNavbar li:hover {
+  background-color: #bbb;
+  color: var(--button-secondary-hover);
+  transition: 500ms;
+}
+
+.sideNavbar li.active {
+  background-color: #bbb;
+  color: var(--button-secondary-hover);
+  font-weight: bold;
+  transition: 300ms;
 }
